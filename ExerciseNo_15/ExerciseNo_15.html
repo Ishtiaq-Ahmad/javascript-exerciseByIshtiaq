@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const inviteList = ['adeel', 'fahad', 'zain']
+        const gustCantMake = 'fahad'
+        const data = inviteList.indexOf('fahad')
+        inviteList.splice(data,1, "ibrahim")
+        for(let i = 0; i < inviteList.length; i++){
+            //new modified list 
+            document.write(inviteList[i] + ' have been invited for the dinner'+ '<br>')
+        }
+        document.write(gustCantMake + ' can\'t make dinner' + '<br>')
+
+    </script>
+</body>
+</html>

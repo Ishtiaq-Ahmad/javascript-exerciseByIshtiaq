@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        
+        let guestOne = 'faizan';
+        let guestTwo = 'fakhar';
+        let guestThree = 'abubakar';
+        const inviteList = ['adeel', 'fahad', 'zain']
+        const data = inviteList.indexOf('fahad')
+        inviteList.splice(data, 1, "ibrahim")
+        // more guests added to the table (faizan, fakhrar, abubakar)
+        inviteList.unshift(guestOne)
+        inviteList.splice(2, 0, guestTwo)
+        inviteList.push(guestThree)
+        for (let i = 0; i < inviteList.length; i++) {
+            //new modified list 
+            document.write(inviteList[i] + ' have been invited for the dinner' + '<br>')
+        }
+        document.write('<br>')
+        document.write(guestOne + ', ' + guestTwo + ', ' + guestThree + ' you found bigger dinner table')        
     </script>
 </body>
+
 </html>

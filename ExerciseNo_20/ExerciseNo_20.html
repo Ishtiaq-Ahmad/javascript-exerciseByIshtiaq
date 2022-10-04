@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-        
+        // Think of something you could store in a array. For example, you could make a list of mountains, rivers, countries, cities, languages, or anything else you’d like. Write a program that creates a list containing these items.
+        const countries = ['Pakistan', 'America', 'Canada', 'France', 'Germany', 'United Kingdom', 'United States',]
+        document.write('List of all Countries' + '<br><br>')
+        countries.forEach((country, index) => {
+            document.write('Country ' + index + ': ' + country + '<br>')
+        })
     </script>
 </body>
+
 </html>

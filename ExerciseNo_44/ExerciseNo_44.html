@@ -12,13 +12,17 @@
     <script>
         function sandwich(item) {
             const array_of_item = ['chicken sandwich', 'egg sandwich', 'ham sandwich', 'nutella sandwich']
-            const orderItem = array_of_item.indexOf(item)
-            console.log(orderItem);
-            return
+            const data = array_of_item.filter((ele) => ele === item)
+            const orderItem = ` ${data[0]} have been ordered`
+
+            return orderItem
         }
         const array1 = sandwich('chicken sandwich')
         const array2 = sandwich('ham sandwich')
-        const array3 = sandwich('nutella sandwich')        
+        const array3 = sandwich('nutella sandwich')
+        console.log(array1)
+        console.log(array2)
+        console.log(array3)  
     </script>
 </body>
 
